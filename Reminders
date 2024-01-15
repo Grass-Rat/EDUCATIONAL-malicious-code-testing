@@ -1,0 +1,12 @@
+Backdoor Attacks
+
+With a backdoor attack, the offending code can take over an application to extract trade secrets from business databases, steal employee information for identity theft, erase critical files, and spread from one server to another. Seeds can be planted that go unnoticed for days or even months, gathering information and sending it back to the attacker without detection.
+Scripting Attacks
+
+Script injection can modify application functionality to reroute applications to another server, use different databases, retrieve additional unauthorized data, and modify web pages.
+Trojan Horse and Spyware
+
+Malicious code may go undetected on infected computers, simply monitoring applications and websites accessed. Once critical information is stolen, such as bank accounts or passwords, the information is forwarded to the perpetrator.
+Worms
+
+Worm attacks are designed to self-replicate across multiple computers or enterprise networks, often stealing or even destroying files and critical data. 
