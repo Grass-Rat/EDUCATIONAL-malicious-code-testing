@@ -1,13 +1,4 @@
-#!/usr/bin/env python
-# -*-coding:utf-8 -*-
-'''
-@File    :   worm.py
-@Time    :   2021/06/02 18:22:30
-@Author  :   Shanto Roy 
-@Version :   1.0
-@Contact :   sroy10@uh.edu
-@Desc    :   The script is a worm that can replicate itself and all other files
-'''
+# The script is a worm that can replicate itself and all other files
 
 
 import os
