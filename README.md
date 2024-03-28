@@ -1,4 +1,4 @@
-Certainly! Here's the GitHub README formatted with descriptions for each program:
+This README is formatted with descriptions for each program.
 
 ---
 
