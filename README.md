@@ -4,14 +4,11 @@ This README is formatted with descriptions for each program.
 
 ## One: Simple Virus in Python
 
-This code represents a simple virus written in Python. It replicates itself by creating a new binary executable file with a randomly generated filename. The code achieves this by:
+This code represents a basic Python virus. It replicates by creating a new binary executable with a randomly generated filename, achieved through:
 
-1. Importing necessary modules: `argv` from `sys`, `choice` and `randint` from `random`, and `ascii_letters` from `string`.
-2. Defining a lambda function `Randstr` to generate a random filename with a specified length, appending ".exe" extension to it.
-3. Generating a random filename using `Randstr` function with a length between 4 and 8 characters.
-4. Retrieving the name of the current script.
-5. Opening the current script file in binary read mode and reading its content.
-6. Writing the read content into a new file with the generated random filename in binary write mode.
+-Importing necessary modules: argv from sys, choice, and randint from random.
+-Generating a random filename of 4 to 8 characters with a lambda function.
+-Reading the current script file and writing its content to a new file with the generated filename, effectively spreading as a virus.
 
 In summary, this code creates a copy of itself with a randomly generated filename ending with ".exe", effectively spreading as a virus.
 
