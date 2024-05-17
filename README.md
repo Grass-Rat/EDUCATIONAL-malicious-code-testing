@@ -1,4 +1,5 @@
 This README is formatted with descriptions for each program.
+ITS EDUCATIONAL I SWEAR DO NOT REPRODUCE THIS OR UNLAWFULLY DISTRIBUTE IT
 
 ---
 
