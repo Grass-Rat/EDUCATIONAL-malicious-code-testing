@@ -78,7 +78,7 @@ class PolymorphicEntity(FileEntity):
         return '\n'.join(obfuscated_lines)
 
     def generate_random_comment(self):
-        return ''.join(random.choices(string.ascii_letters + string.digits + ', k=20))
+        return ''.join(random.choices(string.ascii_letters + string.digits + ' ', k=20))
 
 class File(FileEntity):
     def __init__(self, path):
@@ -92,7 +92,7 @@ class Directory:
         self.path = path
         self.file_entities = []
 
-    def add_file_entity(self,file_entity):
+    def add_file_entity(self, file_entity):
         self.file_entities.append(file_entity)
 
     def replicate_file_entities(self, target_dir):
@@ -100,7 +100,7 @@ class Directory:
             file_entity.copy_file(target_dir)
 
 # Example usage:
-entity = PolymorphicEntity(os.path.realpath(__file__))
+entity = PolymorphicEntity(os.path.realpath(__file__)
 file1 = File(os.path.join('path', 'to', 'file1'))
 file2 = File(os.path.join('path', 'to', 'file2'))
 
